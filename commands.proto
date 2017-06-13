@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package commands;
+
+message Query {
+    int64 desired = 1;
+}
+
+message RawDocument {
+    string message = 1;
+}
+
+message Document {
+    string ID = 1;
+    bytes Body = 2;
+}
+
+message IndexResponse {
+    repeated string IDs = 1;
+    // duration of indexing operation in milliseconds
+    int64 Duration = 2;
+    // size of indexing operation in bytes
+    int64 Size = 3;
+}
+
+message SearchResponse {
+    repeated Document documents = 1;
+}
+
+service CommandService {
+    rpc Index(Query) returns (IndexResponse){}
+    rpc Search(Query) returns (SearchResponse){}
+}

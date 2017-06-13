@@ -1,0 +1,8 @@
+FROM billyteves/alpine-golang-glide:1.2.0
+
+ADD . /go/src/github.com/b3ntly/elasticsearch-stress
+WORKDIR /go/src/github.com/b3ntly/elasticsearch-stress
+RUN glide install
+RUN go install ./server
+ENTRYPOINT /go/bin/server
+EXPOSE 3000

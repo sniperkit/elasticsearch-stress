@@ -1,0 +1,70 @@
+hash: 083c04d81969228bab494846ebd1bf8d519e2f8a0b5e5d2c2a8fd9758e2fcf42
+updated: 2017-06-12T18:02:54.992809088-07:00
+imports:
+- name: github.com/b3ntly/elasticsearch
+  version: 23cfff7ebac1887874416f622b1e0a6c232c105d
+  subpackages:
+  - mock
+- name: github.com/corpix/uarand
+  version: 1d58d0383c4d7a4697f63d1097d466864c9ab6d3
+- name: github.com/golang/protobuf
+  version: 2bba0603135d7d7f5cb73b2125beeda19c09f4ef
+  subpackages:
+  - proto
+  - ptypes/any
+- name: github.com/gorilla/context
+  version: 08b5f424b9271eedf6f9f0ce86cb9396ed337a42
+- name: github.com/gorilla/mux
+  version: bcd8bc72b08df0f70df986b97f95590779502d31
+- name: github.com/hashicorp/go-cleanhttp
+  version: 3573b8b52aa7b37b9358d966a898feb387f62437
+- name: github.com/icrowley/fake
+  version: 9f67e8561905ff9c2b64fdd801ee70cf852b3b89
+- name: github.com/improbable-eng/grpc-web
+  version: c80d09b5fefda32af492c96b069e9ead40c2e5e0
+  subpackages:
+  - go/grpcweb
+- name: github.com/oklog/ulid
+  version: d311cb43c92434ec4072dfbbda3400741d0a6337
+- name: github.com/rs/cors
+  version: 2d7dd2a10331137ae3f931ba08c21fd00cbf208d
+- name: github.com/rs/xhandler
+  version: ed27b6fd65218132ee50cd95f38474a3d8a2cd12
+- name: golang.org/x/net
+  version: da118f7b8e5954f39d0d2130ab35d4bf0e3cb344
+  subpackages:
+  - context
+  - http2
+  - http2/hpack
+  - idna
+  - internal/timeseries
+  - lex/httplex
+  - trace
+- name: golang.org/x/text
+  version: a9a820217f98f7c8a207ec1e45a874e1fe12c478
+  subpackages:
+  - secure/bidirule
+  - transform
+  - unicode/bidi
+  - unicode/norm
+- name: google.golang.org/genproto
+  version: 411e09b969b1170a9f0c467558eb4c4c110d9c77
+  subpackages:
+  - googleapis/rpc/status
+- name: google.golang.org/grpc
+  version: d8960bd63c6743defa6d54926e5edfa8e4a28e43
+  subpackages:
+  - codes
+  - credentials
+  - grpclb/grpc_lb_v1
+  - grpclog
+  - internal
+  - keepalive
+  - metadata
+  - naming
+  - peer
+  - stats
+  - status
+  - tap
+  - transport
+testImports: []

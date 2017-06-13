@@ -1,0 +1,23 @@
+# Host and port to listen and serve on.
+beere.me:80
+
+# compress all returned files
+gzip
+
+# prettify urls by truncating file extensions
+ext .html .css .js
+
+log stdout
+errors stdout
+
+root /home
+
+tls off
+
+proxy /api grpc:9090 {
+    without /api
+}
+
+proxy /metrics grafana:3000 {
+    without /metrics
+}

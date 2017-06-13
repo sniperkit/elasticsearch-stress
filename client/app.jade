@@ -1,0 +1,14 @@
+div.container
+    .card
+        .card-block
+            form("v-on:submit.prevent"="indexDocuments()")
+                .form-group
+                    input.form-control("v-model"="query", placeholder="Insert N")
+
+                button("@click.native"="indexDocuments()").btn.btn-default Index
+
+    .card("v-for"="query in queries")
+        .card-block
+            .card-title Indexed {{ query.idsList.length }} documents
+            .card-text Size {{ query.size }} bytes
+            .card-text Time {{ query.duration / 1000000 }}ms

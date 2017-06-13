@@ -1,0 +1,14 @@
+package: github.com/b3ntly/elasticsearch-stress
+import:
+- package: golang.org/x/net
+  subpackages:
+  - context
+- package: google.golang.org/grpc
+  version: ^1.4.0
+- package: github.com/b3ntly/elasticsearch
+  version: ^0.2.0
+- package: github.com/icrowley/fake
+- package: github.com/corpix/uarand
+- package: github.com/improbable-eng/grpc-web
+  subpackages:
+  - go/grpcweb
